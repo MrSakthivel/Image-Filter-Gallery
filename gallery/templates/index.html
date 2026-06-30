@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <h1>Image Gallery</h1>
+    <div class="container">
+        <div class="filter-buttons">
+            <button data-name="all" class="active">Show all Items</button>
+
+            {% for cat in categories %}
+            <button data-name="{{ cat|lower }}">{{ cat }}</button>
+            {% endfor %}
+        </div>
+
+        <div class="div-btn">
+            <a href="/upload" class="btn">Upload Image</a>
+        </div>
+
+        <div class="gallery">
+            {% for img in images %}
+            <div class="card">
+                <img src="{{ img.image.url }}" alt="{{ img.category }}">
+                <p>Category: {{ img.category }}</p>
+            </div>
+            {% empty %}
+            <p>No images uploaded yet.</p>
+            {% endfor %}
+        </div>
+
+        <p class="no-results" style="display:none; text-align:center;">No items found.</p>
+
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>

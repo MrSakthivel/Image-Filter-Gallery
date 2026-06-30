@@ -1,0 +1,394 @@
+/* body {
+    font-family: Arial;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 36px;
+    color: darkslategray;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background: #2b6cb0;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.div-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.filter-buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightgray;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-buttons button:hover {
+    background-color: gray;
+}
+
+.filter-buttons button.active {
+    background-color: #2b6cb0;
+    color: white;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card .title {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card p {
+    text-align: center;
+    padding: 8px;
+    font-weight: 500;
+}
+
+.upload-wrapper {
+    max-width: 400px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.upload-wrapper h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2b6cb0;
+}
+
+.upload-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.upload-wrapper input,
+.upload-wrapper select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.upload-wrapper button {
+    width: 100%;
+    background: #2b6cb0;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.upload-wrapper button:hover {
+    background: #1c4c8c;
+}
+
+.back-btn {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    padding: 8px 15px;
+    background: #555;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+
+    .card img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .filter-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-buttons button {
+        width: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    .upload-wrapper {
+        margin: 20px;
+        padding: 20px;
+    }
+} */
+ body {
+    font-family: Arial;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 36px;
+    color: darkslategray;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background: #2b6cb0;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.div-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.filter-buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightgray;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-buttons button:hover {
+    background-color: gray;
+}
+
+.filter-buttons button.active {
+    background-color: #2b6cb0;
+    color: white;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card .title {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card p {
+    text-align: center;
+    padding: 8px;
+    font-weight: 500;
+}
+
+.upload-wrapper {
+    max-width: 400px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.upload-wrapper h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2b6cb0;
+}
+
+.upload-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.upload-wrapper input,
+.upload-wrapper select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.upload-wrapper button {
+    width: 100%;
+    background: #2b6cb0;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.upload-wrapper button:hover {
+    background: #1c4c8c;
+}
+
+.back-btn {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    padding: 8px 15px;
+    background: #555;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+
+    .card img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .filter-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-buttons button {
+        width: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    .upload-wrapper {
+        margin: 20px;
+        padding: 20px;
+    }
+}
